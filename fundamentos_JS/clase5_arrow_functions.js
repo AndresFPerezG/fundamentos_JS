@@ -47,10 +47,14 @@ function imprimirSiEsMayorDeEdad(persona){
 imprimirSiEsMayorDeEdad(andres)
 imprimirSiEsMayorDeEdad(juan)
 
-function permitirAcceso(persona){
+/*function permitirAcceso(persona){
     if(!esMayorDeEdad(persona)){
         console.log('ACCESO DENEGADO')
     }
-}
+}*/
+
+//Ejecicio con arrow function
+const permitirAcceso = ({ edad }) => !esMayorDeEdad({ edad }) ? console.log( `Acceso Denegado`): console.log(`Puede seguir`)
 
 permitirAcceso(juan)
+permitirAcceso(andres)
