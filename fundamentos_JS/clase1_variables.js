@@ -6,11 +6,15 @@ var peso = 80;
 
 //*-Código para mostrar el ultimo caracter del nombre del usuario-*//
 
+/*
+
 var nombreUsuario = 'Andres'
 
 var letrasDelUsuario = nombreUsuario.charAt(nombreUsuario.length -1)
 
 alert(letrasDelUsuario)
+
+*/
 
 
 //strings
@@ -48,18 +52,19 @@ peso -= jugarFutbol
 //comprar 3 vinos
 var total = precioVino * 3
 //resultado es 600.90000000001
-//para que sea más preciso en decimales hacemos lo siguiente:
 
+//para que sea más preciso en decimales hacemos lo siguiente:
 var totalPreciso = precioVino * 100 * 3 / 100
 
-//o tambien por medio de la función Math()
+// O tambien por medio de la función Math()
 var total = Math.round(precioVino * 100 * 3) / 100
 //resultado 600.9
 
-var totalstr = total.tiFixed(2) //para tener en cuenta 2 o más decimales pero los convierte en un string
+var totalstr = total.toFixed(2) //para tener en cuenta 2 o más decimales pero los convierte en un string
 //resultado 600.90
 
-
+//se convierte el string de totalstr a float con los decimales configurados en ./*toFixed
+var total2 = parseFloat(totalstr)
 
 
 
