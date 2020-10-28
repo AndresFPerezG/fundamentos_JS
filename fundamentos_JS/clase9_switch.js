@@ -48,7 +48,8 @@ switch(mes.toUpperCase()){
     console.log('La Inmaculada Concepción de María EL 8 DE DICIEMBRE')
     console.log('Navidad 25 de diciembre, El Día de los Santos Inocentes el 28 de diciembre y Dia de la Sagrada Familia el 30 de diciembre')
         break;
-    default: console.log('No ingresaste un més válido')
+    default: 
+        console.log('No ingresaste un més válido')
 }
 
 
